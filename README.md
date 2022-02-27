@@ -1,10 +1,14 @@
-# shipment_service_front
+# **Shipment Service Front**
 
-## Project setup
-```
+> :alembic: This application provide interface for managing shipments.
+
+
+## :construction: Install
+```sh
 npm install
 ```
 
+## :rocket: Usage
 ### Compiles and hot-reloads for development
 ```
 npm run serve
@@ -14,11 +18,10 @@ npm run serve
 ```
 npm run build
 ```
+## :bust_in_silhouette: Authors
 
-### Lints and fixes files
-```
-npm run lint
-```
+* [Aminov Emil](https://github.com/AminovE99)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## :zap: Possible Enhancement
+* :sparkles: Need to realize ability to change status for shipment 

@@ -3,6 +3,7 @@
     <h1>Shipments service</h1>
     <AddShipment @add-shipment="addShipment"/>
     <ShipmentTable v-bind:shipments="shipments"
+                   v-on:remove-shipment="removeShipment"
     />
   </div>
 </template>
@@ -29,6 +30,11 @@ export default {
   components: {
     ShipmentTable, AddShipment
   },
+  methods: {
+    removeShipment(id) {
+      this.shipments = this.shipments.filter(shipment => shipment.id !== id);
+    }
+  }
 }
 </script>
 

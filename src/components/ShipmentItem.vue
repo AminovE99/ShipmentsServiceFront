@@ -26,11 +26,11 @@ export default {
   },
   methods: {
     deleteShipment(id) {
-      console.log(id);
       fetch(`http://localhost:8000/api/shipment/${id}/`, {
         method: "DELETE",
         headers: {'Content-Type': 'application/json'}
       })
+      this.$emit('remove-shipment', id);
     }
   }
 }

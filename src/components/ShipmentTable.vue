@@ -15,6 +15,7 @@
       <ShipmentItem
           v-for="shipment of shipments"
           v-bind:shipment="shipment" :key="shipment.id"
+          v-on:remove-shipment="removeShipment"
       />
     </table>
   </div>
@@ -26,6 +27,11 @@ export default {
   props: ['shipments'],
   components: {
     ShipmentItem
+  },
+  methods: {
+    removeShipment(id) {
+      this.$emit('remove-shipment', id)
+    }
   }
 }
 </script>
